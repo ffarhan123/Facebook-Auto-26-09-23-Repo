@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [RegressionSuiteParallelization]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="tests.VerifyLoginPage">
+        <methods>
+          <include name="verifyTheLoginButtonByPassingCorrectEmailPassword"/>
+          <include name="openBrowser"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="goToLoginPage"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- tests.VerifyLoginPage -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+  <test thread-count="2" parallel="classes" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="tests.VerifyLoginPage">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="verifyTheLoginButtonByPassingCurrectEmailOnly"/>
+          <include name="beforeSuite"/>
+          <include name="goToLoginPage"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- tests.VerifyLoginPage -->
+      <class name="tests.VerifyForgottenPasswordPage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="goToForgottenPasswordPage"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="verifySearcButton"/>
+          <include name="openBrowser"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- tests.VerifyForgottenPasswordPage -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [RegressionSuiteParallelization] -->
