@@ -57,6 +57,7 @@ public class VerifyForgottenPasswordPage extends Base
 		{
 			driver = openFirefoxBrowser();
 		}
+		//changes in localRepo
 		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
 		driver.manage().window().maximize();
 	}
