@@ -65,7 +65,7 @@ public class VerifyForgottenPasswordPage extends Base
 	@BeforeClass
 	public void createPomObject()
 	{
-		System.out.println("BeforeClass");
+		System.out.println("BEFORE CLASS");
 		loginPage = new LoginPage(driver);
 		forgottenPasswordPage = new ForgottenPasswordPage(driver);
 	}
