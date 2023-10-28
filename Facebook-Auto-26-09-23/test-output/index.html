@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-RegressionSuiteParallel_tests_classes" class="navigator-link ">
-                    <span>C:\Users\hp\eclipse-workspace\Facebook-Auto-26-09-23\Parallel-tests-classes.xml</span>
+                    <span>C:\Users\hp\git\Facebook-Auto-26-09-23-Repo\Facebook-Auto-26-09-23\Parallel-tests-classes.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">18 methods, 3 failed,   15 passed</span>
+                    <span class="method-stats">18 methods, 2 failed,   16 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,12 +104,7 @@
                     <div class="method-list-content failed suite-RegressionSuiteParallel_tests_classes">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionSuiteParallel_tests_classes" title="tests.VerifyLoginPage" class="method navigator-link" hash-for-method="verifyTheLoginButtonByPassingCorrectEmailPassword">verifyTheLoginButtonByPassingCorrectEmailPassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionSuiteParallel_tests_classes" title="tests.VerifyLoginPage" class="method navigator-link" hash-for-method="verifyTheLoginButtonByPassingCorrectEmailPassword">verifyTheLoginButtonByPassingCorrectEmailPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-RegressionSuiteParallel_tests_classes" title="tests.VerifyLoginPage" class="method navigator-link" hash-for-method="verifyTheLoginButtonByPassingCorrectEmailOnly">verifyTheLoginButtonByPassingCorrectEmailOnly</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -198,7 +193,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionSuiteParallel_tests_classes" title="tests.VerifyLoginPage" class="method navigator-link" hash-for-method="verifyTheLoginButtonByPassingCorrectEmailOnly">verifyTheLoginButtonByPassingCorrectEmailOnly</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-RegressionSuiteParallel_tests_classes" title="tests.VerifyLoginPage" class="method navigator-link" hash-for-method="verifyTheLoginButtonByPassingCorrectEmailPassword">verifyTheLoginButtonByPassingCorrectEmailPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuiteParallel_tests_classes" title="tests.VerifyLoginPage" class="method navigator-link" hash-for-method="verifyTheLoginButtonByPassingCorrectEmailPassword">verifyTheLoginButtonByPassingCorrectEmailPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-RegressionSuiteParallel_tests_classes -->
@@ -221,26 +221,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyTheLoginButtonByPassingCorrectEmailPassword">
-                  </a> <!-- verifyTheLoginButtonByPassingCorrectEmailPassword -->
-                  <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailPassword</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: (//div[contains(@class,&apos;x1rg5ohu x1n2onr6 x3ajldb&apos;)])[1]&apos; (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at page.LoggedInHomePage.clickOnAccountLogo(LoggedInHomePage.java:34)
-	at tests.VerifyLoginPage.verifyTheLoginButtonByPassingCorrectEmailPassword(VerifyLoginPage.java:135)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[contains(@class,&apos;x1rg5ohu x1n2onr6 x3ajldb&apos;)])[1]&quot;}
-  (Session info: chrome=117.0.5938.152)
+                  <a name="verifyTheLoginButtonByPassingCorrectEmailOnly">
+                  </a> <!-- verifyTheLoginButtonByPassingCorrectEmailOnly -->
+                  <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailOnly</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h2[@class=&quot;uiHeaderTitle&quot;]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.27.224.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.152, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7633f2501e8943faec1bc3c345d2972d
-*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;x1rg5ohu x1n2onr6 x3ajldb&apos;)])[1]}
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.22.16.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 119.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231019122658, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12604, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4e023360-6eea-42b3-bcb9-c0c679b45089
+*** Element info: {Using=xpath, value=//h2[@class=&quot;uiHeaderTitle&quot;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -253,15 +244,12 @@ Session ID: 7633f2501e8943faec1bc3c345d2972d
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 17 more
+	at jdk.proxy2/jdk.proxy2.$Proxy19.getText(Unknown Source)
+	at page.BlankPasswordPage.getBlankPasswordErrorTitle(BlankPasswordPage.java:23)
+	at tests.VerifyLoginPage.verifyTheLoginButtonByPassingCorrectEmailOnly(VerifyLoginPage.java:107)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
 ... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -271,95 +259,29 @@ Session ID: 7633f2501e8943faec1bc3c345d2972d
                   <a name="verifyTheLoginButtonByPassingCorrectEmailPassword">
                   </a> <!-- verifyTheLoginButtonByPassingCorrectEmailPassword -->
                   <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailPassword</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: (//div[contains(@class,&apos;x1rg5ohu x1n2onr6 x3ajldb&apos;)])[1]&apos; (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at page.LoggedInHomePage.clickOnAccountLogo(LoggedInHomePage.java:34)
-	at tests.VerifyLoginPage.verifyTheLoginButtonByPassingCorrectEmailPassword(VerifyLoginPage.java:135)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[contains(@class,&apos;x1rg5ohu x1n2onr6 x3ajldb&apos;)])[1]&quot;}
-  (Session info: MicrosoftEdge=118.0.2088.46)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;x1rg5ohu x1n2onr6 x3ajldb x1ja2u2z&quot;&gt;...&lt;/div&gt; is not clickable at point (1436, 28). Other element would receive the click: &lt;div class=&quot;x1uvtmcs x4k7w5x x1h91t0o x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1n2onr6 x1qrby5j x1jfb8zj&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=118.0.2088.69)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.27.224.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.22.16.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 118.0.2088.46, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59844}, msedge: {msedgedriverVersion: 117.0.2045.55 (50f62b8a7655..., userDataDir: C:\Users\hp\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f75b5ffe88477e80ae4c10122007ec63
-*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;x1rg5ohu x1n2onr6 x3ajldb&apos;)])[1]}
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 118.0.2088.69, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:53712}, msedge: {msedgedriverVersion: 117.0.2045.55 (50f62b8a7655..., userDataDir: C:\Users\hp\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe0a8102a8a0ed06d02d47a248674ded
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 25 more
-... Removed 23 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyTheLoginButtonByPassingCorrectEmailPassword">
-                  </a> <!-- verifyTheLoginButtonByPassingCorrectEmailPassword -->
-                  <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailPassword</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: (//div[contains(@class,&apos;x1rg5ohu x1n2onr6 x3ajldb&apos;)])[1]&apos; (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at page.LoggedInHomePage.clickOnAccountLogo(LoggedInHomePage.java:34)
-	at tests.VerifyLoginPage.verifyTheLoginButtonByPassingCorrectEmailPassword(VerifyLoginPage.java:135)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at page.LoggedInHomePage.clickOnAccountLogo(LoggedInHomePage.java:35)
+	at tests.VerifyLoginPage.verifyTheLoginButtonByPassingCorrectEmailPassword(VerifyLoginPage.java:144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: (//div[contains(@class,&apos;x1rg5ohu x1n2onr6 x3ajldb&apos;)])[1]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-ADC0TJP&apos;, ip: &apos;172.27.224.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18444, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: daf1d525-8524-4758-98a5-54969361a73b
-*** Element info: {Using=xpath, value=(//div[contains(@class,&apos;x1rg5ohu x1n2onr6 x3ajldb&apos;)])[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 25 more
-... Removed 22 stack frames
+... Removed 20 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -479,9 +401,16 @@ Session ID: daf1d525-8524-4758-98a5-54969361a73b
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyTheLoginButtonByPassingCorrectEmailOnly">
-                  </a> <!-- verifyTheLoginButtonByPassingCorrectEmailOnly -->
-                  <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailOnly</span>
+                  <a name="verifyTheLoginButtonByPassingCorrectEmailPassword">
+                  </a> <!-- verifyTheLoginButtonByPassingCorrectEmailPassword -->
+                  <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheLoginButtonByPassingCorrectEmailPassword">
+                  </a> <!-- verifyTheLoginButtonByPassingCorrectEmailPassword -->
+                  <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailPassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -489,13 +418,16 @@ Session ID: daf1d525-8524-4758-98a5-54969361a73b
         </div> <!-- panel RegressionSuiteParallel_tests_classes -->
         <div panel-name="test-xml-RegressionSuiteParallel_tests_classes" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hp\eclipse-workspace\Facebook-Auto-26-09-23\Parallel-tests-classes.xml</span>
+            <span class="header-content">C:\Users\hp\git\Facebook-Auto-26-09-23-Repo\Facebook-Auto-26-09-23\Parallel-tests-classes.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;RegressionSuiteParallel-tests/classes&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;extents.ExtentTestNGIReporterListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
@@ -503,14 +435,14 @@ Session ID: daf1d525-8524-4758-98a5-54969361a73b
       &lt;class name=&quot;tests.VerifyLoginPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;EdgeTest&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;EdgeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.VerifyForgottenPasswordPage&quot;/&gt;
       &lt;class name=&quot;tests.VerifyLoginPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- EdgeTest --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;FirefoxTest&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;FirefoxTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.VerifyForgottenPasswordPage&quot;/&gt;
@@ -564,80 +496,80 @@ data.addRows(18);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyTheLoginButtonByPassingCorrectEmailPassword')
 data.setCell(0, 2, 'tests.VerifyLoginPage')
-data.setCell(0, 3, 44366);
+data.setCell(0, 3, 35913);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyTheLoginButtonByPassingCorrectEmailPassword')
 data.setCell(1, 2, 'tests.VerifyLoginPage')
-data.setCell(1, 3, 44337);
+data.setCell(1, 3, 20663);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyTheLoginButtonByPassingCorrectEmailPassword')
 data.setCell(2, 2, 'tests.VerifyLoginPage')
-data.setCell(2, 3, 42912);
+data.setCell(2, 3, 17792);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyTheLoginButtonByPassingCorrectEmailOnly')
 data.setCell(3, 2, 'tests.VerifyLoginPage')
-data.setCell(3, 3, 11202);
+data.setCell(3, 3, 16905);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyTheLoginButtonByPassingCorrectEmailOnly')
 data.setCell(4, 2, 'tests.VerifyLoginPage')
-data.setCell(4, 3, 7296);
+data.setCell(4, 3, 11658);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyTheLoginButtonByPassingCorrectEmailOnly')
 data.setCell(5, 2, 'tests.VerifyLoginPage')
-data.setCell(5, 3, 6242);
+data.setCell(5, 3, 10254);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyCancelButton')
 data.setCell(6, 2, 'tests.VerifyForgottenPasswordPage')
-data.setCell(6, 3, 5534);
+data.setCell(6, 3, 6581);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verifyCancelButton')
 data.setCell(7, 2, 'tests.VerifyForgottenPasswordPage')
-data.setCell(7, 3, 5372);
+data.setCell(7, 3, 5907);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'verifyCancelButton')
 data.setCell(8, 2, 'tests.VerifyForgottenPasswordPage')
-data.setCell(8, 3, 4954);
+data.setCell(8, 3, 5547);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'verifySearcButton')
 data.setCell(9, 2, 'tests.VerifyForgottenPasswordPage')
-data.setCell(9, 3, 4358);
+data.setCell(9, 3, 5034);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifySearcButton')
-data.setCell(10, 2, 'tests.VerifyForgottenPasswordPage')
-data.setCell(10, 3, 4275);
+data.setCell(10, 1, 'verifyTheLoginButtonByPassingBlankEmailPassword')
+data.setCell(10, 2, 'tests.VerifyLoginPage')
+data.setCell(10, 3, 4674);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'verifySearcButton')
 data.setCell(11, 2, 'tests.VerifyForgottenPasswordPage')
-data.setCell(11, 3, 4178);
+data.setCell(11, 3, 4430);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyTheLoginButtonByPassingBlankEmailPassword')
-data.setCell(12, 2, 'tests.VerifyLoginPage')
-data.setCell(12, 3, 3462);
+data.setCell(12, 1, 'verifySearcButton')
+data.setCell(12, 2, 'tests.VerifyForgottenPasswordPage')
+data.setCell(12, 3, 4311);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'verifyTheLoginButtonByPassingBlankEmailPassword')
 data.setCell(13, 2, 'tests.VerifyLoginPage')
-data.setCell(13, 3, 2279);
+data.setCell(13, 3, 3121);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'verifyTheLoginButtonByPassingBlankEmailPassword')
 data.setCell(14, 2, 'tests.VerifyLoginPage')
-data.setCell(14, 3, 1899);
+data.setCell(14, 3, 2720);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'verifyForgottenPasswordPageTitleMessage')
 data.setCell(15, 2, 'tests.VerifyForgottenPasswordPage')
-data.setCell(15, 3, 95);
+data.setCell(15, 3, 1120);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'verifyForgottenPasswordPageTitleMessage')
 data.setCell(16, 2, 'tests.VerifyForgottenPasswordPage')
-data.setCell(16, 3, 85);
+data.setCell(16, 3, 119);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'verifyForgottenPasswordPageTitleMessage')
 data.setCell(17, 2, 'tests.VerifyForgottenPasswordPage')
-data.setCell(17, 3, 56);
+data.setCell(17, 3, 67);
 window.suiteTableData['RegressionSuiteParallel_tests_classes']= { tableData: data, tableDiv: 'times-div-RegressionSuiteParallel_tests_classes'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-RegressionSuiteParallel_tests_classes">
               </div> <!-- times-div-RegressionSuiteParallel_tests_classes -->
             </div> <!-- times-div -->
@@ -673,447 +605,445 @@ return data;
               <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
-                <span class="method-start">9 ms</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(Edge)</span>
-                <span class="method-start">18 ms</span>
+                <span class="method-start">25 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(Chrome)</span>
-                <span class="method-start">21 ms</span>
+                <span class="method-start">27 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(Chrome)</span>
-                <span class="method-start">3465 ms</span>
+                <span class="method-start">4215 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(Edge)</span>
-                <span class="method-start">7029 ms</span>
+                <span class="method-start">5023 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">createPomObject</span>
-                <span class="method-start">9137 ms</span>
-              </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPomObject</span>
-                <span class="method-start">9137 ms</span>
+                <span class="method-start">10627 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createPomObject</span>
+                <span class="method-start">10628 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">10721 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">goToForgottenPasswordPage</span>
+                <span class="method-start">10721 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">createPomObject</span>
+                <span class="method-start">12102 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">goToForgottenPasswordPage</span>
-                <span class="method-start">9316 ms</span>
+                <span class="method-start">12119 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createPomObject</span>
+                <span class="method-start">12120 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">9352 ms</span>
+                <span class="method-start">12138 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailOnly</span>
-                <span class="method-start">13003 ms</span>
+                <span class="method-start">17766 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailOnly</span>
+                <span class="method-start">24633 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">createPomObject</span>
-                <span class="method-start">13754 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">goToForgottenPasswordPage</span>
-                <span class="method-start">13756 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyForgottenPasswordPageTitleMessage</span>
-                <span class="method-start">20558 ms</span>
+                <span class="method-start">26388 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyForgottenPasswordPageTitleMessage status=SUCCESS method=VerifyForgottenPasswo...)</span>
-                <span class="method-start">20647 ms</span>
+                <span class="method-start">27515 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">goToForgottenPasswordPage</span>
-                <span class="method-start">20650 ms</span>
+                <span class="method-start">27518 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyTheLoginButtonByPassingCorrectEmailOnly status=SUCCESS method=VerifyLoginPage...)</span>
-                <span class="method-start">24207 ms</span>
+                <span class="method-start">28022 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">24209 ms</span>
+                <span class="method-start">28023 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTheLoginButtonByPassingBlankEmailPassword</span>
-                <span class="method-start">24988 ms</span>
+                <span class="method-start">30329 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyTheLoginButtonByPassingBlankEmailPassword status=SUCCESS method=VerifyLoginPa...)</span>
-                <span class="method-start">26889 ms</span>
+                <span class="method-start">35005 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">26904 ms</span>
+                <span class="method-start">35006 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyForgottenPasswordPageTitleMessage</span>
+                <span class="method-start">35861 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyForgottenPasswordPageTitleMessage status=SUCCESS method=VerifyForgottenPasswo...)</span>
+                <span class="method-start">35981 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">goToForgottenPasswordPage</span>
+                <span class="method-start">35982 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailPassword</span>
+                <span class="method-start">36766 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyCancelButton</span>
-                <span class="method-start">27550 ms</span>
+                <span class="method-start">36959 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailPassword</span>
-                <span class="method-start">28072 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyTheLoginButtonByPassingCorrectEmailOnly status=SUCCESS method=VerifyLoginPage...)</span>
+                <span class="method-start">41542 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">41543 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyCancelButton status=SUCCESS method=VerifyForgottenPasswordPage.verifyCancelBu...)</span>
-                <span class="method-start">32926 ms</span>
+                <span class="method-start">42511 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">goToForgottenPasswordPage</span>
-                <span class="method-start">32928 ms</span>
+                <span class="method-start">42513 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyForgottenPasswordPageTitleMessage</span>
-                <span class="method-start">36039 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyForgottenPasswordPageTitleMessage status=SUCCESS method=VerifyForgottenPasswo...)</span>
-                <span class="method-start">36136 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">createPomObject</span>
-                <span class="method-start">36137 ms</span>
-              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheLoginButtonByPassingBlankEmailPassword</span>
+                <span class="method-start">44206 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyCancelButton</span>
+                <span class="method-start">44384 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyTheLoginButtonByPassingBlankEmailPassword status=SUCCESS method=VerifyLoginPa...)</span>
+                <span class="method-start">47329 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">36139 ms</span>
+                <span class="method-start">47330 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailPassword</span>
+                <span class="method-start">50133 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifySearcButton</span>
-                <span class="method-start">38969 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailOnly</span>
-                <span class="method-start">39288 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifySearcButton status=SUCCESS method=VerifyForgottenPasswordPage.verifySearcButt...)</span>
-                <span class="method-start">43158 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">clearObjects</span>
-                <span class="method-start">43160 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyTheLoginButtonByPassingCorrectEmailOnly status=SUCCESS method=VerifyLoginPage...)</span>
-                <span class="method-start">46585 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">goToForgottenPasswordPage</span>
-                <span class="method-start">46586 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyCancelButton</span>
-                <span class="method-start">54776 ms</span>
+                <span class="method-start">50314 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyCancelButton status=SUCCESS method=VerifyForgottenPasswordPage.verifyCancelBu...)</span>
-                <span class="method-start">60314 ms</span>
+                <span class="method-start">50966 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">goToLoginPage</span>
-                <span class="method-start">60315 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyTheLoginButtonByPassingBlankEmailPassword</span>
-                <span class="method-start">61793 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyTheLoginButtonByPassingBlankEmailPassword status=SUCCESS method=VerifyLoginPa...)</span>
-                <span class="method-start">64073 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">goToForgottenPasswordPage</span>
-                <span class="method-start">64073 ms</span>
+                <span class="method-start">50968 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifySearcButton status=SUCCESS method=VerifyForgottenPasswordPage.verifySearcButt...)</span>
+                <span class="method-start">55349 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">clearObjects</span>
+                <span class="method-start">55352 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">verifySearcButton</span>
+                <span class="method-start">58746 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifySearcButton status=SUCCESS method=VerifyForgottenPasswordPage.verifySearcButt...)</span>
+                <span class="method-start">63059 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">clearObjects</span>
+                <span class="method-start">63061 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyTheLoginButtonByPassingCorrectEmailPassword status=FAILURE method=VerifyLogin...)</span>
-                <span class="method-start">70990 ms</span>
+                <span class="method-start">67929 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">clearObjects</span>
-                <span class="method-start">71402 ms</span>
+                <span class="method-start">68891 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">71405 ms</span>
+                <span class="method-start">68901 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyTheLoginButtonByPassingCorrectEmailPassword status=SUCCESS method=VerifyLogin...)</span>
+                <span class="method-start">72681 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">clearObjects</span>
+                <span class="method-start">72683 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">72685 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">72107 ms</span>
+                <span class="method-start">72815 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifySearcButton</span>
-                <span class="method-start">72139 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(Firefox)</span>
-                <span class="method-start">72511 ms</span>
+                <span class="method-start">72974 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifySearcButton status=SUCCESS method=VerifyForgottenPasswordPage.verifySearcButt...)</span>
-                <span class="method-start">76498 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">73429 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser(Firefox)</span>
+                <span class="method-start">87245 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createPomObject</span>
+                <span class="method-start">103898 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createPomObject</span>
+                <span class="method-start">103898 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">76500 ms</span>
+                <span class="method-start">103900 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">clearObjects</span>
-                <span class="method-start">76500 ms</span>
-              </div> <!-- configuration-class after -->
+              <div class="configuration-method before">
+                <span class="method-name">goToForgottenPasswordPage</span>
+                <span class="method-start">103904 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailPassword</span>
-                <span class="method-start">78248 ms</span>
+                <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailOnly</span>
+                <span class="method-start">111576 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test before">
-                <span class="method-name">openBrowser(Firefox)</span>
-                <span class="method-start">81880 ms</span>
-              </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">createPomObject</span>
-                <span class="method-start">91973 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">goToForgottenPasswordPage</span>
-                <span class="method-start">91975 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyForgottenPasswordPageTitleMessage</span>
-                <span class="method-start">103119 ms</span>
+                <span class="method-start">113126 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyForgottenPasswordPageTitleMessage status=SUCCESS method=VerifyForgottenPasswo...)</span>
-                <span class="method-start">103177 ms</span>
+                <span class="method-start">113194 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">createPomObject</span>
-                <span class="method-start">103178 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">goToLoginPage</span>
-                <span class="method-start">103179 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailOnly</span>
-                <span class="method-start">106109 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyTheLoginButtonByPassingCorrectEmailOnly status=SUCCESS method=VerifyLoginPage...)</span>
-                <span class="method-start">112352 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">goToForgottenPasswordPage</span>
-                <span class="method-start">112354 ms</span>
+                <span class="method-start">113195 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCancelButton</span>
-                <span class="method-start">118866 ms</span>
+                <span class="method-start">120145 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyTheLoginButtonByPassingCorrectEmailPassword status=FAILURE method=VerifyLogin...)</span>
-                <span class="method-start">122588 ms</span>
+                <span class="method-name">afterMethod([TestResult name=verifyTheLoginButtonByPassingCorrectEmailOnly status=FAILURE method=VerifyLoginPage...)</span>
+                <span class="method-start">123237 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">123457 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">clearObjects</span>
-                <span class="method-start">123457 ms</span>
-              </div> <!-- configuration-class after -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">123378 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheLoginButtonByPassingBlankEmailPassword</span>
+                <span class="method-start">124793 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyCancelButton status=SUCCESS method=VerifyForgottenPasswordPage.verifyCancelBu...)</span>
-                <span class="method-start">123821 ms</span>
+                <span class="method-start">126054 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">goToLoginPage</span>
-                <span class="method-start">123824 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyTheLoginButtonByPassingBlankEmailPassword</span>
-                <span class="method-start">124943 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">125337 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyTheLoginButtonByPassingBlankEmailPassword status=SUCCESS method=VerifyLoginPa...)</span>
-                <span class="method-start">128407 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">goToForgottenPasswordPage</span>
-                <span class="method-start">128409 ms</span>
+                <span class="method-start">126056 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifySearcButton</span>
-                <span class="method-start">135534 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">clearObjects</span>
-                <span class="method-start">139810 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifySearcButton status=SUCCESS method=VerifyForgottenPasswordPage.verifySearcButt...)</span>
-                <span class="method-start">139810 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyTheLoginButtonByPassingBlankEmailPassword status=SUCCESS method=VerifyLoginPa...)</span>
+                <span class="method-start">127514 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">139811 ms</span>
+                <span class="method-start">127515 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyTheLoginButtonByPassingCorrectEmailPassword</span>
-                <span class="method-start">140711 ms</span>
+                <span class="method-start">129210 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifySearcButton</span>
+                <span class="method-start">134011 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyTheLoginButtonByPassingCorrectEmailPassword status=FAILURE method=VerifyLogin...)</span>
-                <span class="method-start">185080 ms</span>
+                <span class="method-name">afterMethod([TestResult name=verifySearcButton status=SUCCESS method=VerifyForgottenPasswordPage.verifySearcButt...)</span>
+                <span class="method-start">138443 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">clearObjects</span>
-                <span class="method-start">185187 ms</span>
+                <span class="method-start">138444 ms</span>
               </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">clearObjects</span>
+                <span class="method-start">149875 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyTheLoginButtonByPassingCorrectEmailPassword status=SUCCESS method=VerifyLogin...)</span>
+                <span class="method-start">149875 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">185187 ms</span>
+                <span class="method-start">149876 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">192599 ms</span>
+                <span class="method-start">154465 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyForgottenPasswordPage</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">196585 ms</span>
+                <span class="method-start">165687 ms</span>
               </div> <!-- configuration-suite after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">196587 ms</span>
+                <span class="method-start">165688 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

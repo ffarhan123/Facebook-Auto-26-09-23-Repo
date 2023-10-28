@@ -132,7 +132,7 @@ public class VerifyLoginPage extends Base
 	{
 		testCaseID = "T102";
 		loginPage.sendUserName("farhanfaisal3963@gmail.com");
-		loginPage.sendPassword("Farhan123@");
+		loginPage.sendPassword("Microsoft123@");
 		loginPage.clickLoginButton();
 		Thread.sleep(2000);
 		//Thread.sleep(1000);  //instead of 2secs we can try with 1sec also
