@@ -3,6 +3,10 @@
 
 <suite name="RegressionSuiteParallelization-classes" thread-count="2" parallel = "classes">
 
+<listeners>
+		<listener class-name="extents.ExtentTestNGIReporterListener" />
+</listeners>
+
   <test  name="ChromeTest">
       <parameter name="browser" value="Chrome"/>
 	    <classes>

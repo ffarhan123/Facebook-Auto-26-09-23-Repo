@@ -2,6 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="RegressionSuiteParallel-tests/classes"  thread-count="2"  parallel = "tests">
+
+<listeners>
+		<listener class-name="extents.ExtentTestNGIReporterListener" />
+</listeners>
+
   <test  name="ChromeTest"  thread-count="2"  parallel = "classes">
 	  <parameter name="browser" value="Chrome"/>
 	    <classes>
@@ -10,7 +15,7 @@
 	    </classes>
 	  </test> <!-- Test -->
   
-  <test  name="EdgeTest"  thread-count="2"  parallel = "tests">
+  <test  name="EdgeTest"  thread-count="2"  parallel = "classes">
 	  <parameter name="browser" value="Edge"/>
 	    <classes>
 	      <class name="tests.VerifyForgottenPasswordPage"/>
@@ -18,7 +23,7 @@
 	    </classes>
 	  </test> <!-- Test -->
   
-  <test  name="FirefoxTest"  thread-count="2"  parallel = "tests">
+  <test  name="FirefoxTest"  thread-count="2"  parallel = "classes">
 	  <parameter name="browser" value="Firefox"/>
 	    <classes>
 	      <class name="tests.VerifyForgottenPasswordPage"/>

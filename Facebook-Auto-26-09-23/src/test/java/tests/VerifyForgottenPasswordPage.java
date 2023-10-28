@@ -21,6 +21,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import browsersSetup.Base;
 import page.ForgottenPasswordPage;
 import page.LoginPage;
@@ -32,6 +36,8 @@ public class VerifyForgottenPasswordPage extends Base
 	LoginPage loginPage;
 	ForgottenPasswordPage forgottenPasswordPage;
 	String testCaseID;
+	static ExtentTest test;
+	static ExtentHtmlReporter reporter;
 	
 	@BeforeSuite()
 	public void beforeSuite()
@@ -43,7 +49,9 @@ public class VerifyForgottenPasswordPage extends Base
 	@BeforeTest()
 	public void openBrowser(String browserName)
 	{
-		System.out.println("BEFORE TEST");
+		reporter = new ExtentHtmlReporter("test-output/ExtendReport/Extent.html");
+		ExtentReports extend = new ExtentReports();
+		extend.attachReporter(reporter);
 		System.out.println("BEFORE TEST");
 		if(browserName.equals("Chrome"))
 		{
